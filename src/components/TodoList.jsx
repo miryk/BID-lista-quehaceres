@@ -7,10 +7,14 @@ const TodoList = ({list, editListDelete, check, setCheck}) => {
   }
 
   const deleteItem = (index) => {
-    let auxList = [...list];
-    auxList.splice(index, 1)
-    editListDelete(auxList)
-    console.log(auxList)
+    let auxListItem = [...list];
+    auxListItem.splice(index, 1)
+    editListDelete(auxListItem)
+    let auxListCheck = [...check];
+    auxListCheck.splice(index, 1);
+    setCheck(auxListCheck);
+
+    console.log(auxListItem, auxListCheck)
   }
 
   return (
