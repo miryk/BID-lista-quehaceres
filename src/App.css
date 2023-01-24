@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+#root {
+  max-width: 70%;
+  min-height: 600px;
+  margin: 5% auto;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(201, 216, 216);
+  border-radius: 30px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+
+.form-container {
+  padding: 0 24%;
+}
+
+form {
+  font-size: 1.5rem;
+}
+
+form > label {
+  display: block;
+}
+
+form > input {
+  font-size: 1.5rem;
+  min-width: 620px;
+  min-height: 40px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+form > input:focus-visible {
+  outline: none;
+}
+
+form > button {
+  height: 40px;
+  background-color: darkslategray;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.show-container {
+  font-size: 1.2rem;
+  width: max-content;
+  padding: 0 24%;
+  margin: 30px 0;
+}
+
+.item {
+  font-size: 1.2em;
+  width: 705px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative;
+}
+
+
+.item * input {
+  margin: 0 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.item * p {
+  margin: 0 10px;
+  font-size: 1.5em;
+}
+
+.item > button {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.item > button:hover {
+  background-color: tomato;
+  color: black;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: gray;
+}
